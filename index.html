@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <Div>
+        <h1> Hello World</h1>
+    </Div>
+    <script type="text/javascript">
+
+        // завдання1
+        /**
+Допишіть код, використовуючи деструктуризацію, щоб у консолі браузера з'явилися рядки, які написані в коментарях.
+ */
+
+// let arr = ["Tom", "Sam", "Ray", "Bob"];
+// let [x, y, ... z] = arr;/* Ваш код */
+
+// console.log(x); // "Tom"
+// console.log(y); // "Sam"
+// console.log(z); // [Bob]
+
+
+
+/**
+Допишіть код, використовуючи деструктуризацію, щоб у консолі браузера з'явилися рядки, які написані в коментарях.
+ */
+
+//  let names = {
+//   first: "Tom",
+//   second: "Sam",
+//   third: "Ray",
+//   fourth: "Bob",
+//   fifth: "Name №5",
+// };
+
+// let {first: f, third: x, fifth: fifth
+//   /* Ваш код */
+// } = names;
+
+// console.log(f); // "Tom"
+
+// console.log(x); // "Ray"
+
+// console.log(fifth); // "Name №5"
+
+
+// Допишіть код, використовуючи деструктуризацію, щоб у консолі браузера з'явилися рядки, які написані в коментарях.
+ 
+
+// let data = {
+//   names: ["Sam", "Tom", "Ray", "Bob"],
+//   ages: [20, 24, 22, 26],
+// };
+
+// let {names: [ , name2, , name4], ages: [ , age2, , age4] } /* Ваш код */ = data;
+
+// console.log(name2); // "Tom"
+// console.log(age2); // 24
+// console.log(name4); // "Bob"
+// console.log(age4); // 26
+
+
+// напишіть функцію mul(), яка приймає будь-яку кількість параметрів різного
+// типу та повертає добуток параметрів типу Number.
+// Якщо параметри Number відсутні, повертає число 0.
+// Не можна використовувати властивість arguments,
+// але до функції mul() можна додати один параметр.
+ 
+
+// function mul(...args) {
+//   let result = args
+//     .filter(item => typeof item === 'number')
+//     .reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+
+//   return result === 1 ? 0 : result;
+// } {
+//   // Ваш код
+// }
+// console.log(mul(1, "str", 2, 3, true)); // 6
+// console.log(mul(null, "str", false, true)); // 0
+
+// Допишіть код за допомогою стрілкових функцій, щоб у консолі браузера з'явилося число, яке написано в коментарі.
+
+// let calc = {
+//   x: 2,
+//   y: 3,
+//   mul: () => {
+//     return calc.x * calc.y;
+//   },
+// };
+
+// setTimeout(calc.mul(), 2000); // 6, через 2 секунди
+
+// let server = {
+//   data: 0,
+//   convertToString: function (callback) {
+//     callback(() => {
+//       return this.data + "";
+//     });
+//   },
+// };
+
+// let client = {
+//   server: server,
+//   result: "",
+//   calc: function (data) {
+//     this.server.data = data;
+//     this.server.convertToString(this.notification());
+//   },
+//   notification: function () {
+//     return (callback) => {
+//       this.result = callback();
+//     };
+//   },
+// };
+
+// client.calc(123);
+// console.log(client.result); // "123"
+// console.log(typeof client.result); // "string"
+
+
+
+// Допишіть код, використовуючи інтерполяцію, щоб у консолі браузера з'явився рядок, який написано в коментарі.
+
+let names = {
+  first: "Tom",
+  second: "Sam",
+  third: "Ray",
+};
+
+console.log(`First: -${names.first}-, Second - "${names.second}", Third => '${names.third}'`); // "First: -Tom-, Second - "Sam", Third => 'Ray'"
+
+        </script>
+</body>
+</html>
